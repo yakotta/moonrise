@@ -1,26 +1,12 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="transitions_styles.css" />
     </head>
     <body id="sky" class="skystart">
         <img id='moon' class='moonstart' src='resources/moon.png' />
         <img id='mountains' src='resources/mountains.png' />
             
-        <script type="text/javascript">
-            // First, obtain the two changing html elements by using their id attribute
-            var moonElement = document.getElementById("moon");
-            var skyElement = document.getElementById("sky");
-            
-            setTimeout(function(){
-                // This changes the element's class to end, which in the CSS has the bottom transition
-                moonElement.className = "moonend";
-                skyElement.className = "skyend";
-                
-                setTimeout(function(){
-                    moonElement.className = "moonstart";
-                    skyElement.className = "skystart";
-                },10000);
-            },250);
-        </script>
+        <script src="transitions_script.js"></script>
     </body>
 </html>
